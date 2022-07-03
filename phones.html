@@ -1,0 +1,60 @@
+<!DOCTYBE html>
+<html>
+<head>
+    
+     <link rel="stylesheet" href="phone.css">
+  
+    <title>phone</title> 
+    <meta charset="utf-8">
+    </head>
+<body>
+    
+    
+    <div class="container">
+    
+    <div class="content">
+        <div class="text">
+        <h2>The most attractive phones</h2>
+        <p>The best iPhone in the world of smart phones, 
+            get it now at your nearest branch</p>
+            <a href="login.html">Login</a>
+            <br>
+            <a href="contact.html" class="main-btn">Contact Us</a>
+        </div>
+        <div class="image">
+        <img  class="post" src="0.jpg">
+        
+        </div>
+        </div>
+        <div class="icons">
+        <img  onclick="phones(this.src); colors('#D7A86E')"  src="0.jpg">
+        <img  onclick="phones(this.src);colors('#876445') " src="5.jpg">  
+        <img  onclick="phones(this.src);colors('#1e1e1e') " src="2.jpg">
+        <img  onclick="phones(this.src); colors('#B3541E')" src="3.jpg">
+        <img  onclick="phones(this.src); colors('#73777B')" src="4.jpg">
+            
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        
+        var img = document.querySelector('.post');
+let container=document.querySelector('.container');
+function phones(phone){
+    img.src=phone;
+}
+        function colors(color){
+            container.style.background=color;
+        }
+
+
+    </script>
+     
+    
+    </body>
+
+
+
+</html>
